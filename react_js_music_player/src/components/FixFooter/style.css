@@ -1,0 +1,160 @@
+.fix-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* here width is not required because
+    left and right here is already 0 */
+    /* width: 100%; */
+    padding: 10px 20px;
+    background: grey;
+    background: url(./../../assets/footer-bg-1.jpg);
+    /* to ensure the center position of the image */
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* height: 50px; */
+    transition: height .2s ease-out;
+}
+
+.fix-footer.active{
+    height: calc(100% - 40px);
+}
+
+.slide-up-btn{
+    width: 50px;
+    height: 5px;
+    background: grey;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.navigation-menu{
+    width: 160px;
+    background: #000;
+    border-radius: 5px;
+    /* it takes the element to to the
+    center */
+    margin: 5px auto;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.navigation-menu a{
+    font-size: 12px; 
+}
+
+.navigation-menu img{
+    width: 15px;
+}
+
+/* meaning inside mini-player that is .artist-cover-img */
+.mini-player .artist-cover-img{
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.mini-player-control button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.mini-player button img{
+    width: 15px;
+}
+
+.mini-player button:first-child{
+    margin-right: 10px;
+}
+
+.mini-player-info{
+    font-size: 12px;
+}
+
+.mini-player-info p:last-child{
+    color: grey;
+}
+
+.audio-player-lg .audio-cover-lg-img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #fff;
+    /* here auto is the secret sauce
+    which brings the content in the middle */
+    margin: 20px auto;
+}
+
+.audio-player-lg .audio-cover-lg-img img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* this translates image to 50% left
+    and 50% to top */
+    transform: translate(-50%, -50%);
+    background: grey;
+}
+
+.audio-player-progress{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.audio-player-progress input[type=range]{
+    width: 100%;
+    -webkit-appearnace: none;
+    height: 2px;
+    border-radius: 2px;
+    /* linear gradient can only be 
+    applied to background-image */
+    background: linear-gradient(to right, #ffffff 50%, grey 50%);
+}
+
+.audio-controls{
+    width: 180px;
+    margin: 0 auto;
+}
+
+.audio-controls button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+/* It will target elements which are DIRECT 
+children of a particular element */
+.audio-controls button > first-child{
+    /* this is used to rotate the 
+    audio control */
+    transform: scaleX(-1);
+}
+
+.audio-controls .play-pause-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.audio-controls .play-pause-button img{
+    width: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.anchor-style{
+    text-decoration: none;
+    color: white;
+}
+
